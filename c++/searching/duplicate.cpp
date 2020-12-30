@@ -16,7 +16,14 @@ int findDuplicate(vector<int>& nums){
 }
 
 int main(){
-    vector<int> nums = {3,1,3,4,2};
+    int n;
+    cin>>n;
+    vector<int> nums;
+    int ele;
+    for(int i=0;i<n;i++){
+        cin>>ele;
+        nums.push_back(ele);
+    }
     cout<<findDuplicate(nums);
     return 0;
 }
